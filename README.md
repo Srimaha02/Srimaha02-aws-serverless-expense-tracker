@@ -40,9 +40,6 @@ AWS Lambda (ExpenseHandler)
 v
 Amazon DynamoDB (Expenses Table)
 
-yaml
-Copy code
-
 ---
 
 ## 📌 API Details
@@ -50,8 +47,6 @@ Copy code
 ### Endpoint
 POST /add-expense
 
-bash
-Copy code
 
 ### Sample Request Body
 ```json
@@ -62,11 +57,13 @@ Copy code
 }
 Sample Response
 json
-Copy code
 {
   "message": "Expense added successfully"
 }
+
+
 🧠 How It Works (Simple Explanation)
+
 The client sends expense details using a POST request.
 
 API Gateway receives the request and forwards it to Lambda.
