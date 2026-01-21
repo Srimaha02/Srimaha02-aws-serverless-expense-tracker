@@ -64,50 +64,52 @@ json
 
 🧠 How It Works (Simple Explanation)
 
-The client sends expense details using a POST request.
+- The client sends expense details using a POST request.
 
-API Gateway receives the request and forwards it to Lambda.
+- API Gateway receives the request and forwards it to Lambda.
 
-Lambda function:
+- Lambda function:
 
-Generates a unique expense ID
+- Generates a unique expense ID
 
-Processes the data
+- Processes the data
 
-Stores it in DynamoDB
+- Stores it in DynamoDB
 
-DynamoDB saves the expense permanently.
+- DynamoDB saves the expense permanently.
 
-A success response is returned to the client.
+- A success response is returned to the client.
 
 🔒 Security & Cost Safety
-No EC2 or servers used
 
-No hard-coded credentials
+-No EC2 or servers used
 
-IAM roles used for secure access
+- No hard-coded credentials
 
-Uses only AWS Free Tier eligible services
+- IAM roles used for secure access
 
-No running resources when idle
+- Uses only AWS Free Tier eligible services
+
+- No running resources when idle
 
 🧪 Testing
+
 The API was tested using Thunder Client in VS Code by sending POST requests with JSON data.
 Each request stores a new expense record in DynamoDB.
 
 
 💡 Key Learnings
-Serverless architecture concepts
+- Serverless architecture concepts
 
-Event-driven backend design
+- Event-driven backend design
 
-AWS Lambda execution model
+- AWS Lambda execution model
 
-API Gateway routing
+- API Gateway routing
 
-DynamoDB NoSQL data storage
+- DynamoDB NoSQL data storage
 
-IAM role-based security
+- IAM role-based security
 
 
 👩‍💻 Author
